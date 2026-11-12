@@ -1,9 +1,9 @@
 package domain
 
 type User struct {
-	ID   string `json:"id"`
-	Name string `json:"name"`
-	Tsks []Task `json:"tasks"`
+	ID    string `json:"id"`
+	Name  string `json:"name"`
+	Tasks []Task `json:"tasks"`
 }
 
 func NewUser(name string) *User
