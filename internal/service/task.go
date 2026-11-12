@@ -7,7 +7,10 @@ import (
 	"github.com/vadimptrrrr/dofordoing/internal/domain"
 )
 
-type TaskService struct{}
+type TaskService struct {
+	uRepo UserRepo
+	tRepo TaskRepo
+}
 
 func NewTaskService(repo TaskRepo, users UserRepo) *TaskService
 

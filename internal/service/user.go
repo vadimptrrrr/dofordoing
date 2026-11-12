@@ -6,7 +6,9 @@ import (
 	"github.com/vadimptrrrr/dofordoing/internal/domain"
 )
 
-type UserService struct{}
+type UserService struct {
+	uRepo UserRepo
+}
 
 func NewUserService(repo UserRepo) *UserService
 
